@@ -5,7 +5,7 @@ const fs = require('fs').promises;
 fs.readFile('./text.txt', 'utf8')
     .then(data => console.log(data))
     .catch(console.error)
-
+    // utf-8 처럼 인코딩을 명시하지 않은경우 버퍼의 내용을 명시
 
 // writing a file
 fs.writeFile('./file.txt', 'Hello, Dream coders!!!')
